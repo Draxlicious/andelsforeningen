@@ -1,0 +1,54 @@
+body{
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+    margin: 0 20%;
+}
+
+.main{
+    background-color: white;
+    height:100vh;
+}
+
+.title_space{
+    padding: 3em 5em;
+}
+
+.main_picture{
+    width: 100%;
+}
+
+.black_banner{
+    background: -webkit-linear-gradient(#252525, #0a0a0a);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+}
+
+.paragraph{
+    margin: 5em 5em;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: inherit;
+    padding: 1em;
+}
+.dropdown-toggle{
+    color: white;
+    padding: 1em;
+}
+.nav-link.active:hover{
+    background-color: white;
+    color:black;
+}
+.nav-link:focus:hover,
+.nav-link:hover{
+    background-color: white;
+    color:black;
+}
+#stay{
+    position: relative;
+}
