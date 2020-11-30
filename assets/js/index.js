@@ -39,7 +39,7 @@ function getParagraph(fragmentId, callback){
         Storskrald må først sættes ned DAGEN INDEN AFHENTNING. Der vil blive sat skilte med kategorierne op i gården. Der må derfor (som altid) heller ikke stå nogle cykler parkeret op af husmuren ved bommen – videregiv venligst denne information til medbeboere, lejere mm.<br>
         VH<br>
         Bestyrelsen",<br>`,
-        historik: `Andelsforeningen blev stiftet i december 2010 og ligger på Frederiksberg C.<br><br> <div id="map" style="width:400px;height:400px;background:grey"></div>`,
+        historik: `Andelsforeningen blev stiftet i december 2010 og ligger på Frederiksberg C.<br>`,
         vedtægter: "Andelsforeningens gældende vedtægter kan findes her. Vedtægterne er senest opdateret i forbindelse med foreningens ordinære generalforsamling i 2017.",
         venteliste: "Andelsforeningens gældende vedtægter kan findes her. Vedtægterne er senest opdateret i forbindelse med foreningens ordinære generalforsamling i 2017.",
         fremleje: `I andelsforeningen gælder følgende overordnede regler for hel eller delvis fremleje og udlån af andelsboliger:<br>
@@ -88,15 +88,6 @@ function getParagraph(fragmentId, callback){
         bestyrelsen: "Informations udbydere til medlemmer",
         adminstrator: "adminstrator holder styr på information online",
     };
-
-    function myMap() {  
-        var mapOptions = {  
-            center: new google.maps.LatLng(51.5, -0.12),  
-            zoom: 10,  
-            mapTypeId: google.maps.MapTypeId.HYBRID  
-        }  
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-        }
 
 
         // if(location.hash == "#venteliste"){
