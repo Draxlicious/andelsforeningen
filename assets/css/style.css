@@ -1,12 +1,15 @@
 body{
     box-sizing: border-box;
     background-color: #e2e2e2;
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 .main{
     background-color: white;
-    height:100vh;
+}
+
+a.nav-link{
+  font-size: 14px;  
 }
 
 .title_space{
@@ -24,8 +27,8 @@ body{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 }
 
-.paragraph{
-    margin: 5em 5em;
+.context{
+    padding: 5em 5em;
 }
 
 .nav{
