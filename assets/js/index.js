@@ -9,7 +9,7 @@ function getTitle(fragmentId, callback){
         home: "Forside",
         nyheder: "Nyheder",
         historik: "Historik",
-        vedtægter: "Vedtægter",
+        vedtaegter: "Vedtægter",
         venteliste: "Beskyttet Venteliste",
         fremleje: "Fremleje",
         husorden: "Husorden",
@@ -18,6 +18,7 @@ function getTitle(fragmentId, callback){
         haandvaerkere: "Håndværkere",
         kalender: "Kalender",
         nyhedsbrev: "Nyhedsbrev",
+        kontakt: "Kontakt",
         bestyrelsen: "Bestyrelsen",
         adminstrator: "Adminstrator"
 
@@ -40,7 +41,7 @@ function getParagraph(fragmentId, callback){
         VH<br>
         Bestyrelsen",<br>`,
         historik: `Andelsforeningen blev stiftet i december 2010 og ligger på Frederiksberg C.<br>`,
-        vedtægter: "Andelsforeningens gældende vedtægter kan findes her. Vedtægterne er senest opdateret i forbindelse med foreningens ordinære generalforsamling i 2017.",
+        vedtaegter: "Andelsforeningens gældende vedtægter kan findes her. Vedtægterne er senest opdateret i forbindelse med foreningens ordinære generalforsamling i 2017.",
         venteliste: "Andelsforeningens gældende vedtægter kan findes her. Vedtægterne er senest opdateret i forbindelse med foreningens ordinære generalforsamling i 2017.",
         fremleje: `I andelsforeningen gælder følgende overordnede regler for hel eller delvis fremleje og udlån af andelsboliger:<br>
         Andelshavere, som var med til at stifte andelsforeningen, har ret til at fremleje eller udlåne deres andelsbolig i en tidsubegrænset periode. Foreningens bestyrelse skal dog godkende fremlejetageren.<br><br>
@@ -85,6 +86,19 @@ function getParagraph(fragmentId, callback){
         &nbsp * Den 5. maj kl 10 2018<br>
         &nbsp * Den 6. maj kl. 10 2018<br>`,
         nyhedsbrev: "Hvis man ønsker at modtage en email, når der kommer en nyhed på hjemmesiden, skal man tage kontakt til bestyrelsen via bestyrelsesmailen på blabla@gmail.com eller via vores kontaktform. Bestyrelsen vil derefter tilføje dig manuelt til maillisten",
+        kontakt: `Andelsforeningens bestyrelse kan kontaktes ved at sende en e-mail eller udfylde nedenstående formular:<br><br>
+
+        Andelsboligforeningen 105<br>
+        City 105<br>
+        Frederiksberg C.<br>
+        Mail: blabla@gmail.com<br><br>
+        <label>Name</label><br>
+        <input type="text"><br><br>
+        <label>E-mail</label><br>
+        <input type="text"><br><br>
+        <label>Din besked</label><br>
+        <textarea rows="4" cols="120" placeholder="Skriv din besked her...">
+        `,
         bestyrelsen: "Informations udbydere til medlemmer",
         adminstrator: "adminstrator holder styr på information online",
     };

@@ -52,6 +52,10 @@ a.nav-link{
     background-color: white;
     color:black;
 }
-#stay{
-    position: relative;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0px;
 }
