@@ -97,7 +97,8 @@ function getParagraph(fragmentId, callback){
         <label>E-mail</label><br>
         <input type="text"><br><br>
         <label>Din besked</label><br>
-        <textarea rows="4" cols="120" placeholder="Skriv din besked her...">
+        <textarea rows="4" cols="120" placeholder="Skriv din besked her..."></textarea>
+        <input type="submit" value="Send">
         `,
         bestyrelsen: "Informations udbydere til medlemmer",
         adminstrator: "adminstrator holder styr på information online",
@@ -144,4 +145,5 @@ context.appendChild(pElement)
 
 if(!location.hash){
     titleElement.innerHTML = "Forside"
+    pElement.innerHTML =  "Velkommen til hjemmesiden for Andelsforeningeå frederiksberg<br><br>På hjemmesiden kan du finde en række relevante oplysninger om foreningen. Har du spørgsmål, så kan du kontakte foreningens bestyrelse her. Du er også velkommen til at kontakte bestyrelsen, hvis du har forslag vedrørende hjemmesidens indhold."
 }
