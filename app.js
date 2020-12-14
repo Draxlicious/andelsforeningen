@@ -1,30 +1,45 @@
-// const express = require("express");
-// const mysql = require("mysql")
-// const app = express();
-// const path = require('path');
-
-// app.set("view options", "ejs");
-// app.use(express.static(__dirname + '/public'));
-
-// // create connection
-// const db = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "",
-//     database: "andelsforeningen"
-// })
-
-// // connect to mysql
-// db.connect(err => {
-//     if (err) {
-//         throw err
-//     }
-//     console.log("mysql connected");
-// })
+const express = require("express");
+const mysql = require("mysql")
+const app = express();
+const path = require('path');
+const logger = require('morgan')
 
 
+app.set('views', path.join(__dirname, 'server/views'));
+// vælg html format der skal vises
+app.set('view engine', 'ejs');
+// peg på hvilken stig css/img skal læses
+app.use(express.static('./public'));
 
-// // create database
+app.use(logger('dev', {
+    // hvis ALLE requests skal ses i loggen, udkommenter næste linje
+    skip: req => (!req.url.endsWith(".html") && req.url.indexOf('.') > -1)
+ }));
+ 
+  
+// create connection
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "andelsforeningen"
+})
+
+// connect to mysql
+db.connect(err => {
+    if (err) {
+        throw err
+    }
+    console.log("mysql connected");
+})
+
+
+app.get("/", (req, res)=>{
+    res.render("index")
+})
+
+
+// create database
 // app.get("/", (req, res) => {
 //     // let sql = `CREATE DATABASE andelsforeningen`
 //     // db.query(sql, err => {
@@ -83,17 +98,17 @@
 //     })
 // })
 
-// // delete employee
-// // app.get("/deleteEmployee/:id", (req, res) =>{
-// //     let sql = `DELETE FROM employee WHERE id = ${req.params.id}`
-// //     let query = db.query(sql, err =>{
-// //         if(err){
-// //             throw err
-// //         }
-// //         res.send("employee deleted")
-// //     }) 
-// // })
-
-// app.listen('3000', () => {
-//     console.log("Server started on 3000");
+// delete employee
+// app.get("/deleteEmployee/:id", (req, res) =>{
+//     let sql = `DELETE FROM employee WHERE id = ${req.params.id}`
+//     let query = db.query(sql, err =>{
+//         if(err){
+//             throw err
+//         }
+//         res.send("employee deleted")
+//     }) 
 // })
+
+app.listen(3000, () => {
+    console.log("Server started on 3000");
+})
